@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Dream Trip</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/style/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>The Dream Trip</h1>
+        <img src="./src/assets/image/logo-company.jpg" alt="logo da companhia">
+    </header>
+
+    <section class="about">
+        <h3 class="title-content">Bem-vindo à The Dream Trip!</h3>
+        <p>Na The Dream Trip, somos apaixonados por oferecer experiências de viagem inesquecíveis e autênticas ao redor
+            do mundo. Nossa missão é conectar você com as maravilhas dos países que você sempre sonhou em visitar,
+            revelando não apenas os pontos turísticos, mas também a rica cultura e as delícias gastronômicas de cada
+            destino.
+
+
+        </p>
+        <br>
+        <h3 class="title-content">Cultura e Tradições
+        </h3>
+        <p>Entendemos que viajar é muito mais do que visitar locais famosos. É sobre mergulhar na cultura local e
+            vivenciar tradições autênticas. Na The Dream Trip, organizamos passeios que incluem festivais locais,
+            apresentações culturais e interações com residentes, permitindo que você compreenda e aprecie as tradições
+            que tornam cada lugar único.
+        </p>
+        <br>
+        <h3 class="title-content">Gastronomia
+        </h3>
+        <p>A comida é uma das maiores prazeres de viajar, e nós garantimos que você terá a oportunidade de experimentar
+            a verdadeira culinária de cada destino. Desde o sushi fresco do Japão e o vinho delicioso da França até as
+            tapas da Espanha e os curry exóticos da Índia, oferecemos experiências gastronômicas que vão além dos
+            restaurantes turísticos.
+        </p>
+        <br>
+        <h3 class="title-content">Vem conhecer o mundo com a gente!</h3>
+        <p>Na The Dream Trip, cada viagem é uma oportunidade para explorar, aprender e se encantar com o mundo. Venha
+            conosco e descubra o que faz de cada destino um lugar inesquecível.</p>
+    </section>
+
+    <nav>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="dropdown-menu">
+            <a href="./index.html">Início</a>
+            <a href="./src/components/marketing-components/countries/countries.html" class="countries-text">Países <span
+                    class="arrow" onclick="toggleCountries()">▼</span></a>
+            <div class="country-list">
+                <a href="#">1. África do Sul</a>
+                <a href="#">2. Argentina</a>
+                <a href="#">3. Austrália</a>
+                <a href="#">4. Canadá</a>
+                <a href="#">5. Chile</a>
+                <a href="#">6. China</a>
+                <a href="#">7. Coreia do Sul</a>
+                <a href="#">8. Egito</a>
+                <a href="#">9. Espanha</a>
+                <a href="#">10. Estados Unidos (EUA)</a>
+                <a href="#">11. França</a>
+                <a href="#">12. Grécia</a>
+                <a href="#">13. Indonésia</a>
+                <a href="#">14. Inglaterra</a>
+                <a href="#">15. Itália</a>
+                <a href="#">16. Japão</a>
+                <a href="#">17. Marrocos</a>
+                <a href="#">18. México</a>
+                <a href="#">19. Peru</a>
+                <a href="#">20. Portugal</a>
+                <a href="#">21. Tailândia</a>
+                <a href="#">22. Turquia</a>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.menu-icon').classList.toggle('active');
+            document.querySelector('.dropdown-menu').classList.toggle('active');
+        }
+
+        function toggleCountries() {
+            document.querySelector('.country-list').classList.toggle('active');
+            document.querySelector('.arrow').classList.toggle('rotated');
+        }
+    </script>
+
+</body>
+
+</html>
