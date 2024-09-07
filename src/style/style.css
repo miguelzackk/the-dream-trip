@@ -35,7 +35,7 @@ header h1 {
 }
 
 .about p {
-    font-size: 18px;
+    font-size: 30px;
     color: #444;
 }
 
@@ -138,3 +138,7 @@ header h1 {
     font-size: 50px;
 }
 
+img{
+    width: 30%;
+    height: 50%;
+}

@@ -57,8 +57,11 @@
 
         <div class="dropdown-menu">
             <a href="./index.html">Início</a>
-            <a href="./src/components/marketing-components/countries/countries.html" class="countries-text">Países <span
-                    class="arrow" onclick="toggleCountries()">▼</span></a>
+            <!-- 'Países' link redirects, but clicking the arrow toggles without redirect -->
+            <a href="./src/components/marketing-components/countries/countries.html" class="countries-text">
+                Países 
+                <span class="arrow" onclick="toggleCountries(event)">▼</span>
+            </a>
             <div class="country-list">
                 <a href="#">1. África do Sul</a>
                 <a href="#">2. Argentina</a>
@@ -92,7 +95,10 @@
             document.querySelector('.dropdown-menu').classList.toggle('active');
         }
 
-        function toggleCountries() {
+        function toggleCountries(event) {
+            // Prevent the arrow click from triggering the link
+            event.preventDefault();
+            event.stopPropagation();
             document.querySelector('.country-list').classList.toggle('active');
             document.querySelector('.arrow').classList.toggle('rotated');
         }
