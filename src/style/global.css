@@ -15,3 +15,94 @@ body {
         opacity: 1;
     }
 }
+
+
+.menu-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+}
+
+.menu-icon div {
+    width: 35px;
+    height: 4px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    background-color: rgba(130, 72, 202, 0.9);
+    border-radius: 5px;
+    padding: 10px;
+    max-height: 400px;
+    overflow-y: auto;
+    transition: opacity 0.5s ease, max-height 0.5s ease;
+    opacity: 0;
+}
+
+.dropdown-menu.active {
+    display: block;
+    opacity: 1;
+}
+
+.dropdown-menu a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.dropdown-menu a:hover {
+    background-color: rgba(240, 128, 184, 0.5);
+}
+
+.dropdown-menu .arrow {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.arrow.rotated {
+    transform: rotate(180deg);
+}
+
+.country-list {
+    display: none;
+    padding-left: 20px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 1.5s ease;
+}
+
+.country-list.active {
+    display: block;
+    max-height: 500px;
+}
+
+.country-list a {
+    font-size: 14px;
+}
+
+.menu-icon.active + .dropdown-menu {
+    display: block;
+}
+
+.country-list.active {
+    display: block;
+}
+
+.dropdown-menu::-webkit-scrollbar {
+    width: 8px;
+}
+
+.dropdown-menu::-webkit-scrollbar-thumb {
+    background-color: rgba(130, 72, 202, 0.8);
+    border-radius: 5px;
+}

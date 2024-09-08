@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>The Dream Trip</title>
+    <link rel="icon" type="image/png" href="./src/assets/image/fanmicon.jpg">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/style/global.css">
     <link rel="stylesheet" href="./src/style/style.css">
@@ -58,7 +59,7 @@
 
         <div class="dropdown-menu">
             <a href="./index.html">Início</a>
-            <!-- 'Países' link redirects, but clicking the arrow toggles without redirect -->
+
             <a href="./src/components/marketing-components/countries/countries.html" class="countries-text">
                 Países
                 <span class="arrow" onclick="toggleCountries(event)">▼</span>
@@ -97,7 +98,6 @@
         }
 
         function toggleCountries(event) {
-            // Prevent the arrow click from triggering the link
             event.preventDefault();
             event.stopPropagation();
             document.querySelector('.country-list').classList.toggle('active');
