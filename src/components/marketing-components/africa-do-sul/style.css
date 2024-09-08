@@ -1,0 +1,55 @@
+header {
+    background-color: rgba(130, 72, 202, 0.8);
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Pacifico', cursive;
+    color: #fff;
+    font-size: 48px;
+}
+
+.about {
+    padding: 40px;
+    text-align: center;
+    background-color: rgba(240, 128, 184, 0.2);
+}
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    color: #444;
+    margin-top: 10px;
+}
+
+h3 {
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+}
+
+img {
+    width: 15%;
+    height: 40%;
+}
+
+.init {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+
+h5{
+    font-family: 'Courier New', Courier, monospace;
+font-size: 29px;
+margin-bottom: 5px;
+}
+
+.final{
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    font-size: 30px;
+    margin-bottom: 5px;
+
+}
