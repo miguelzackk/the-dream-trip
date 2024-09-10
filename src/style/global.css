@@ -160,3 +160,14 @@ h5 {
   font-size: 30px;
   margin-bottom: 5px;
 }
+
+.footer{
+  border-top: 1px solid black;
+}
+
+.footer p{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  font-size: 100%;
+}

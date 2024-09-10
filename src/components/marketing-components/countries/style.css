@@ -159,3 +159,14 @@ header h1 {
   display: flex;
   gap: 500px;
 }
+
+.footer{
+  border-top: 1px solid black;
+}
+
+.footer p{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  font-size: 50%;
+}

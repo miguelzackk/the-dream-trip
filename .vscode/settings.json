@@ -1,3 +1,5 @@
 {
-    "files.autoSave": "afterDelay"
+    "files.autoSave": "afterDelay",
+    "explorer.compactFolders": false,
+    "notebook.compactView": false
 }
